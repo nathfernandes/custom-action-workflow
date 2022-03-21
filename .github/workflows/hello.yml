@@ -1,0 +1,13 @@
+name: Hello world
+
+on: [push]
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      
+      - name: Print message
+        uses: nathfernandes/custom-action@main
